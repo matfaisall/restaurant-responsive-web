@@ -17,50 +17,76 @@
 </head>
 
 <body>
+
   <main>
-    <div class="conteiner">
-      <div class="d-flex justify-content-center">
-        <div class="row mt-5">
-          <div class="col-12">
-            <div class="title text-center" style="color: #EFC81A;">
-              <h5 class="mb-5">Recipe...</h4>
-                <h4 class="mb-3">Let's Get Started!</h4>
-            </div>
-            <p class="text-body-secondary">Create new account to access all features</p>
-            <hr>
-            <div class="card border-0">
-              <form action="">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control py-2" id="name" placeholder="Name">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Name</label>
-                  <input type="email" class="form-control py-2" id="email" placeholder="Enter email address">
-                </div>
-                <div class="mb-3">
-                  <label for="password" class="form-label">Password</label>
-                  <input type="password" class="form-control py-2" id="email" placeholder="Password">
-                </div>
-                <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    I agree to terms & conditions
-                  </label>
-                </div>
-                <button class="btn btn-yellow w-100 py-2">Register Account</button>
-              </form>
-              <div class="mt-5">
-                <p class="text-center">Already have account? <span><a style="color: #EFC81A; text-decoration: none;"
-                      href="">Log in
-                      Here</a></span></p>
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-12 col-md-4 mx-auto">
+
+          <div class="title text-center" style="color: #EFC81A;">
+            <h4 class="mb-5 fw-bold">Recipe...</h4>
+            <h4 class="mb-3 fw-bold">Let's Get Started !</h4>
+          </div>
+          <p class="text-body-secondary text-center mb-4">Create new account to access all features</p>
+          <hr>
+          <div class="card border-0">
+            <form action="">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="name" class="form-control py-3" id="name" placeholder="Name">
               </div>
-            </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control py-3" id="email" placeholder="Enter email address">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control py-3" id="password" placeholder="Password">
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  I agree to terms & conditions
+                </label>
+              </div>
+              <button type="button" class="btn btn-yellow w-100 py-3" data-bs-toggle="modal"
+                data-bs-target="#successRegister">
+                Register Account
+              </button>
+            </form>
+            <p class="mt-5 text-center">Already have account? <span><a href="./login.html" style="color: #EFC81A;">Login
+                  Here</a></span></p>
           </div>
         </div>
       </div>
     </div>
   </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="successRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body py-5">
+          <div class="text-center">
+            <h3 class="mb-5" style="color: #EFC81A;">Account has been set up</h3>
+            <h6 class="mb-5 text-body-secondary">Account activated successfully, please login</h6>
+            <button class="btn btn-yellow w-75 py-3"><a href="./login.html"
+                style="color: #FFF; text-decoration: none;">OK</a></button>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
   <script src="../assets/bootstrap-v5/js/bootstrap.min.js"></script>
 </body>
 
