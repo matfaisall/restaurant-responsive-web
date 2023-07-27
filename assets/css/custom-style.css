@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+:root {
+  /* colors */
+  --primary-color: #EFC81A;
+
+  /* background colors */
+  --background-color: #FFFFFF;
+
+  /* font colors */
+  --text-primary: #3F3A3A;
+  --section-font: #3F3A3A;
+
+  /* font family */
+  --body-fonts: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--body-fonts) !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.bg-yellow {
+  height: 100vh;
+  width: 24%;
+  background-color: var(--primary-color);
+  position: absolute;
+  z-index: -10;
+  right: 0;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+.photo-line {
+  position: absolute;
+  z-index: -10;
+  left: 13%;
+  margin-top: 4%;
+  margin-left: 4%;
+  width: 30%;
+  height: 60%;
+  border-radius: 8px;
+  border: 3px solid var(--primary-color);
+  opacity: 0.7;
+}
+
+.decorate {
+  position: absolute;
+  margin-top: 12%;
+  width: 20%;
+  height: 460px;
+  background-color: var(--primary-color);
+  z-index: -10;
+}
+
+.btn-yellow {
+  background-color: var(--primary-color) !important;
+  color: #FFFFFF !important;
+}
+
+/* Card */
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  color: #FFFFFF;
+}
