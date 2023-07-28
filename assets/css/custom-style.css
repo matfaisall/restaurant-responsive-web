@@ -17,7 +17,7 @@
 
 body {
   font-family: var(--body-fonts) !important;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 
@@ -64,9 +64,24 @@ img {
   z-index: -10;
 }
 
+.decorate-menu {
+  position: absolute;
+  width: 2%;
+  height: 499px;
+  background-color: var(--primary-color);
+  right: 0;
+  top: 50%;
+  z-index: -10
+}
+
 .btn-yellow {
   background-color: var(--primary-color) !important;
   color: #FFFFFF !important;
+}
+
+.btn-green {
+  background-color: #00E092 !important;
+  color: #FFF !important;
 }
 
 /* Card */
