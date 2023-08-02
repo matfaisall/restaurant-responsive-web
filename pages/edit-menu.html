@@ -28,13 +28,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav py-2">
           <li class="nav-item me-5">
-            <a href="#" class="nav-link">Home</a>
+            <a href="../index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item me-5">
-            <a href="#" class="nav-link">Add Recipe</a>
+            <a href="./add-menu.html" class="nav-link">Add Recipe</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Profile</a>
+            <a href="./detail-profile.html" class="nav-link">Profile</a>
           </li>
         </ul>
 
@@ -61,13 +61,17 @@
       <div class="row">
         <div class="col-12 col-md-8 mx-auto">
           <form action="">
-            <div class="bg-body-tertiary rounded-3 mb-3" style="height: 340px; max-height: 340px !important;">
-              <!-- <p class="mb-0 text-center pt-5">Add Photo</p> -->
-              <img src="../assets/images/detail-menu.jpg" alt="" class="rounded img-fluid"
-                style="max-height: 340px !important;">
+            <div class="card bg-body-secondary mb-4" style="height: 410px !important; overflow: hidden">
+              <img id="frame" src="" class="img-fluid w-100 d-block mx-auto upload-img" />
+              <div class="card-img-overlay">
+                <div class="d-flex justify-content-center">
+                  <input class="form-control bg-body-secondary w-50" type="file" id="formFile" onchange="preview()" />
+                </div>
+              </div>
             </div>
             <div class="mb-4">
-              <input type="text" class="form-control py-3 bg-body-tertiary" id="title" placeholder="Title">
+              <input type="text" class="form-control py-3 bg-body-tertiary" id="title"
+                value="American Shrimp Fried Rice" placeholder="Title">
             </div>
             <div class="mb-3">
               <textarea class="form-control bg-body-tertiary" id="ingredients" rows="6"
@@ -116,7 +120,8 @@
   </footer>
   <!-- Footer End -->
 
-
+  <!-- Custom Script -->
+  <script src="../assets/js/custom-scirpt.js"></script>
 
   <!-- Bootstrap JS v5 -->
   <script src="./assets/bootstrap-v5/js/bootstrap.min.js"></script>
